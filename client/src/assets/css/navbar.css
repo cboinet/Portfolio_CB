@@ -8,16 +8,17 @@
   justify-content: flex-start;
   align-items: center;
   background-color: var(--secondary-color);
+  padding-bottom: 0.4em;
 }
 
-.nav .item{
+.nav .nav_item{
   padding: 0.5em;
   color: var(--font-color2);
   font-size: calc(var(--font-size) * 1.5);
 }
 
-.nav .item:hover{
-  color: #BBC5E6;
+.nav .nav_item:hover{
+  color: var(--background-color);
   cursor: pointer;
   transition: color 0.40s;
 }
@@ -37,7 +38,7 @@
     width: 100%;
   }
 
-  .nav .item{
+  .nav .nav_item{
     padding: 1.3em;
     font-size: calc(var(--font-size) * 2.5);
   }

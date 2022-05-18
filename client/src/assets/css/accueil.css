@@ -1,72 +1,97 @@
 .accueil_container{
   background-color: var(--background-color);
   color : var(--font-color1);
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
 }
 
 .accueil_present{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   line-height: var(--line-height);
-  width: 100%;
+  margin: 1.5em;
+  text-align: center;
 }
 
 .accueil_container .moi{
-  width: 50%;
-  border-radius: 4%;
-  margin: 0.9em;
-}
-
-.accueil_present h3{
-  padding-bottom: 1em;
-}
-
-.accueil_present h3{
-  font-weight: 500;
-  font-size: calc(var( --font-size) *1.2);
+  width: 90%;
+  border-radius: 10px;
 }
 
 .accueil_present h1{
   font-weight: 700;
-  font-size: calc(var( --font-size) * 2);
+  font-size: calc(var(--font-size) * 2.2);
+  color: var(--third-color);
 }
 
 .accueil_present h2{
-  font-weight: 500;
-  font-size: calc(var( --font-size) * 1.5);
+  font-weight: 400;
+  font-size: calc(var(--font-size) * 1.8);
+  padding-top: 1em;
+}
+
+.action_button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  outline: 2px solid blue;
+}
+
+.action{
+  border: var(--third-color);
+  color: var(--font-color2);
+  background-color: var(--third-color);
+  font-family: var(--font-family);
+  font-size: calc(var(--font-size) * 1.4);
+  padding: 0.8em;
+  border-radius: 2em;
+}
+
+.action:hover{
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.40s;
+}
+
+@media screen and (min-width: 400px){
+  .accueil_container{
+    
+  }
+   
+ 
 }
 
 
+
 @media screen and (min-width: 760px){
-
-  .accueil_container .moi{
-    width: 58%;
-    border-radius: 6%;
-    margin: 1em;
+  .accueil_container{
+    min-height: 100vh;
   }
-
-  .accueil_present h3{
-    font-weight: 500;
-    font-size: calc(var( --font-size) * 2.5);
+  
+  .accueil_container .moi{
+    width: 50%;
+    margin-top: 1em;
   }
 
   .accueil_present h1{
     font-weight: 900;
-    font-size: calc(var( --font-size) * 5);
+    font-size: calc(var(--font-size) * 4);
   }
 
   .accueil_present h2{
     font-weight: 500;
-    font-size: calc(var( --font-size) * 5);
+    font-size: calc(var(--font-size) * 3);
   }
 
+  .action{
+    font-size: calc(var(--font-size) * 2.4);
+  }
 
 }
