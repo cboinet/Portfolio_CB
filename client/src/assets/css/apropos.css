@@ -1,0 +1,90 @@
+.apropos_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apropos_present{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_hard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills_hard .skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_soft{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills_soft .skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apropos_cv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.action_button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 1em;
+}
+
+.action{
+  border: var(--third-color);
+  color: var(--font-color2);
+  background-color: var(--third-color);
+  font-family: var(--font-family);
+  font-size: calc(var(--font-size) * 1.4);
+  padding: 0.7em;
+  border-radius: 2em;
+}
+
+.action:hover{
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.40s;
+}
+
+
+@media screen and (min-width: 760px){
+
+
+
+  .action_button{
+    width: 35%;
+    margin-bottom: 2em;
+  }
+
+  .action{
+    font-size: calc(var(--font-size) * 2.5);
+  }
+
+}
