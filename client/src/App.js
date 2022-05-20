@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Accueil />} />
@@ -18,6 +18,6 @@ export default function App() {
         <Route path="/projet" element={<Projet />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </>
   );
 }

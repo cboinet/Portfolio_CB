@@ -1,5 +1,5 @@
 .accueil_container{
-  background-color: var(--background-color);
+  height: 100%;
   color : var(--font-color1);
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.accueil_present{
+.accueil_container .accueil_present{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,67 +17,52 @@
   text-align: center;
 }
 
-.accueil_present h1{
+.accueil_container .accueil_present h1{
   font-weight: 700;
   font-size: calc(var(--font-size) * 3);
   color: var(--third-color);
 }
 
-.accueil_present h2{
+.accueil_container .accueil_present h2{
   font-weight: 500;
   font-size: calc(var(--font-size) * 2.4);
 }
 
-.accueil_present h3{
+.accueil_container .accueil_present h3{
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.6);
   padding-top: 0.5em;
 }
 
-.accueil_present .moi{
+.accueil_container .accueil_present .moi{
   width: 96%;
   border-radius: 10px;
   margin-top: 1em;
 }
 
-.action_button{
+.accueil_container .actionbutton_container{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  margin: 1em;
 }
 
-.action{
-  border: var(--third-color);
-  color: var(--font-color2);
-  background-color: var(--third-color);
-  font-family: var(--font-family);
-  font-size: calc(var(--font-size) * 1.4);
-  padding: 0.7em;
-  border-radius: 1em;
-  margin-bottom: 1em;
-}
-
-.action:hover{
-  color: var(--background-color);
-  cursor: pointer;
-  transition: color 0.40s;
-}
 
 @media screen and (min-width: 760px){
   .accueil_container{
     min-height: 50vh;
   }
   
-  .accueil_present{
+  .accueil_container .accueil_present{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .accueil_intro{
+  .accueil_container .accueil_intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,35 +70,31 @@
     margin: 1.4em;
   }
 
-  .accueil_intro h1{
+  .accueil_container .accueil_intro h1{
     font-weight: 900;
     font-size: calc(var(--font-size) * 8);
   }
 
-  .accueil_intro h2{
+  .accueil_container .accueil_intro h2{
     font-weight: 700;
     font-size: calc(var(--font-size) * 4.2);
     margin-bottom: 2em;
   }
 
-  .accueil_intro h3{
+  .accueil_container .accueil_intro h3{
     font-weight: 400;
     font-size: calc(var(--font-size) * 2.8);
     padding-top: 0em;
   }
 
-  .accueil_present .moi{
+  .accueil_container .accueil_present .moi{
     width: 50%;
     margin-top: 0em;
   }
 
-  .action_button{
-    width: 35%;
-  }
-
-  .action{
-    font-size: calc(var(--font-size) * 2.5);
-    margin-top: 0.5em;
+  .accueil_container .actionbutton_container{
+    width: 50%;
+    
   }
 
 }

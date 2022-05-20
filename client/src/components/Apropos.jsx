@@ -1,5 +1,8 @@
 import React from "react";
-import "../assets/css/apropos.css"
+import "../assets/css/apropos.css";
+import Skill from "./Skill";
+import ActionButton from "./ActionButton";
+
 
 export default function Apropos() {
   return (
@@ -12,40 +15,21 @@ export default function Apropos() {
       </div>
 
       <div className="skills_hard">
-        <h1>Langages et technologies utilisés</h1>
-        <div className="skills">
-          <p>HTML5</p>
-          <img />
+        <h1>Mes compétences techniques</h1>
+        <div className="skills_container">
+          <Skill name="HTML5" image="fa-brands fa-html5" />
+          <Skill name="CSS3" image="fa-brands fa-css3" />
+          <Skill name="Javascript" image="fa-brands fa-js-square" />
+          <Skill name="React.js" image="fa-brands fa-react" />
+          <Skill name="Node.js/Express" image="fa-brands fa-node-js" />
+          <Skill name="Visual Studio Code" image="fa-solid fa-code" />
+          <Skill name="GitHub" image="fa-brands fa-github" />
         </div>
-        <div className="skills">
-          <p>CSS3</p>
-          <img />
-        </div>
-        <div className="skills">
-          <p>Javascript</p>
-          <img />
-        </div>  
-        <div className="skills">
-          <p>React.js</p>
-          <img />
-        </div> 
-        <div className="skills">
-          <p>Node.js/Express</p>
-          <img />
-        </div> 
-        <div className="skills">
-          <p>Visual Studio Code</p>
-          <img />
-        </div> 
-        <div className="skills">
-          <p>GitHub</p>
-          <img />
-        </div> 
       </div>
 
       <div className="skills_soft">
-        <h1>Qualités et compétences</h1>
-        <div className="skills">
+        <h1>Mes qualités et expériences</h1>
+        <div className="softskills">
           <p>Orientation client</p>
           <p>Adaptation</p>
           <p>Gestion de projets</p>
@@ -55,9 +39,9 @@ export default function Apropos() {
 
       <div className="apropos_cv">
         <h1>CV</h1>
-        <div className="action_button">
-          <button type="button" className="action">Consulter mon CV</button>
-          <button type="button" className="action">Me contacter</button>
+        <div className="actionbutton_container">
+        <ActionButton role="Consulter mon CV" className="action" />
+        <ActionButton role="Me contacter" className="action" />
         </div>
       </div>
     </section>

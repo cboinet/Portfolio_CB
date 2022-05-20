@@ -1,0 +1,27 @@
+.action_button .action{
+  border: var(--third-color);
+  color: var(--font-color2);
+  background-color: var(--third-color);
+  font-family: var(--font-family);
+  font-size: calc(var(--font-size) * 1.4);
+  padding: 0.7em;
+  border-radius: 1em;
+}
+
+.action_button .action:hover{
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.40s;
+}
+
+
+@media screen and (min-width: 760px){
+  .action_button .action{
+    font-size: calc(var(--font-size) * 2.5);
+    margin-top: 0.5em;
+    padding: 0.8em;
+  
+  }
+
+
+}
