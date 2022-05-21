@@ -10,7 +10,7 @@ export default function Navbar () {
       <img src={logo} className="logo" alt="logo" />
       <div className="nav">
         <Link to="/" className="nav_item"> Accueil </Link>
-        <Link to="/a-propos" className="nav_item"> A propos </Link>
+        <Link to="/a-propos" className="nav_item"> Qui suis-je ? </Link>
         <Link to="/projet" className="nav_item"> Mes projets </Link>
         <Link to ="/contact" className="nav_item"> Contact </Link>
       </div>

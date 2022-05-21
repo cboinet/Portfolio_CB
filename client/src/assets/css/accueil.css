@@ -5,39 +5,35 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.accueil_container .accueil_present{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   line-height: var(--line-height);
-  margin: 1.2em;
+  margin: 1em;
   text-align: center;
 }
 
-.accueil_container .accueil_present h1{
+.accueil_container h1{
   font-weight: 700;
-  font-size: calc(var(--font-size) * 3);
+  font-size: calc(var(--font-size) * 3.4);
   color: var(--third-color);
+
 }
 
-.accueil_container .accueil_present h2{
+.accueil_container h2{
   font-weight: 500;
   font-size: calc(var(--font-size) * 2.4);
+
 }
 
-.accueil_container .accueil_present h3{
+.accueil_container h3{
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.6);
   padding-top: 0.5em;
+
 }
 
-.accueil_container .accueil_present .moi{
-  width: 96%;
+.accueil_container .moi{
+  width: 90%;
   border-radius: 10px;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .accueil_container .actionbutton_container{
@@ -47,54 +43,54 @@
   align-items: center;
   width: 100%;
   margin: 1em;
+
 }
 
 
 @media screen and (min-width: 760px){
   .accueil_container{
     min-height: 50vh;
-  }
-  
-  .accueil_container .accueil_present{
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
   }
 
   .accueil_container .accueil_intro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1.4em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1em;
+
   }
 
   .accueil_container .accueil_intro h1{
     font-weight: 900;
     font-size: calc(var(--font-size) * 8);
+  
   }
 
   .accueil_container .accueil_intro h2{
     font-weight: 700;
     font-size: calc(var(--font-size) * 4.2);
-    margin-bottom: 2em;
+
   }
 
   .accueil_container .accueil_intro h3{
     font-weight: 400;
-    font-size: calc(var(--font-size) * 2.8);
-    padding-top: 0em;
-  }
-
-  .accueil_container .accueil_present .moi{
-    width: 50%;
-    margin-top: 0em;
+    font-size: calc(var(--font-size) * 2.86);
+  
   }
 
   .accueil_container .actionbutton_container{
     width: 50%;
-    
   }
+
+  .accueil_container .moi{
+    width: 20%;
+  
+  }
+
 
 }

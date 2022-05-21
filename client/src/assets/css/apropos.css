@@ -4,14 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
 }
 
-.apropos_container .apropos_present, .skills_hard, .skills_soft, .apropos_cv{
+.apropos_container .apropos_present, .skills_hard, .skills_soft{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
+
 }
 
 .apropos_container .skills_container{
@@ -21,12 +23,14 @@
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+
 }
 
 h1{
   margin-bottom: 1em;
   color: var(--third-color);
   text-align: center;
+
 }
 
 p{
@@ -41,6 +45,7 @@ p{
   align-items: center;
   width: 100%;
   margin: 1em;
+
 }
 
 
@@ -50,18 +55,18 @@ p{
   }
 
   .apropos_container .skills_container{
-    gap : 3em;
+    gap : 2em;
   }
 
   h1{
     font-size: calc(var(--font-size) * 5);
   }
 
-  .apropos_container .actionbutton_container{
-    width: auto;
-    margin-bottom: 1em;
-    outline: 2px solid red ;
+  .skills_hard h1, .skills_soft h1{
+    margin-top: 1em;
+
   }
+
 
 }
 

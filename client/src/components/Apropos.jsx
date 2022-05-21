@@ -11,7 +11,7 @@ export default function Apropos() {
         <h1>Qui suis-je ?</h1>
         <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé d’entreprendre une formation avec la Wild Code
           School, pour devenir Développeur Web.</p>
-        <p>💡 J'ai à cœur d'apprendre et de comprendre grâce aux nombreux défis qui m'attendent. 💡</p>
+        <p>💡 J'ai à cœur d'apprendre et de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
       </div>
 
       <div className="skills_hard">
@@ -37,12 +37,9 @@ export default function Apropos() {
         </div>
       </div>
 
-      <div className="apropos_cv">
-        <h1>CV</h1>
-        <div className="actionbutton_container">
+      <div className="actionbutton_container">
         <ActionButton role="Consulter mon CV" className="action" />
         <ActionButton role="Me contacter" className="action" />
-        </div>
       </div>
     </section>
 
