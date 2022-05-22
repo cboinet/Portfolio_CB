@@ -23,7 +23,7 @@
 
 #root{
   min-height: 100vh;
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
 }
 
 

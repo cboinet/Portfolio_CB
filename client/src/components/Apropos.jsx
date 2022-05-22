@@ -9,9 +9,9 @@ export default function Apropos() {
     <section className="apropos_container">
       <div className="apropos_present">
         <h1>Qui suis-je ?</h1>
-        <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé d’entreprendre une formation avec la Wild Code
-          School, pour devenir Développeur Web.</p>
-        <p>💡 J'ai à cœur d'apprendre et de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
+        <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé de me reconvertir pour devenir Développeur Web.</p>
+        <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'une alternance de 12 mois</p>
+        <p>💡 J'ai à coeur d'apprendre et de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
       </div>
 
       <div className="skills_hard">
