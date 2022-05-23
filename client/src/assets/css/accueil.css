@@ -58,8 +58,8 @@
   }
 
   .accueil_container .moi{
-    width: 385px;
-    height: 295px;
+    width: 310px;
+    height: 300px;
     border-radius: 150px;
     border: 3px solid var(--font-color2);
   }
@@ -93,9 +93,7 @@
   }
 
   .accueil_container .actionbutton_container{
-    width: 50%;
-    margin-bottom: 1em;
- 
+   margin-top: 1.5em;
   }
 
 

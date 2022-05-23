@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 760px){
   .action_button .action{
-    font-size: calc(var(--font-size) * 2.2);
+    font-size: calc(var(--font-size) * 2);
     padding: 0.7em;
   }
 
