@@ -5,13 +5,14 @@
   font-family: var(--font-family);
   font-size: calc(var(--font-size) * 1.4);
   padding: 0.7em;
-  border-radius: 1em;
+  border-radius: 5px;
 }
 
 .action_button .action:hover{
   color: var(--font-color2);
   cursor: pointer;
   transition: color 0.40s;
+  border: 1px solid var(--font-color2);
 }
 
 
@@ -19,7 +20,10 @@
   .action_button .action{
     font-size: calc(var(--font-size) * 2);
     padding: 0.7em;
+  
   }
+
+  
 
 
 }
