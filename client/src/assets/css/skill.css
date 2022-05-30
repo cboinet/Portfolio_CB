@@ -5,13 +5,25 @@
   align-items: center;
   flex-wrap: nowrap;
   width: 150px;
-  background-color: antiquewhite;
+  background-color: VAR( --font-color1);
+  padding: 0.5em;
+  border-radius: 5px;
 }
 
 p{
   font-size: calc(var(--font-size) * 2);
   font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-bottom: 0.4em;
 }
+
+i{
+  color: var(--font-color2);
+  font-size:x-large;
+}
+
+
 
 
 
@@ -23,6 +35,12 @@ p{
     flex-wrap: wrap;
     width: 300px;
     gap: 1em;
+    padding: 0.8em;
+    
+  }
+
+  p{
+    padding-bottom: 0em;
   }
 
 }
