@@ -1,18 +1,32 @@
 const express = require('express')
 const router = express()
-const mysql = require('mysql2')
+const mysql = require('mysql2/promise')
 
-const DB = mysql.createConnection({
+const DB = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: 'cboi',
-  database: 'portfolio'
+  password: '',
+  database: 'portfolio',
+  port: 3306
 })
 
-router.get('/', (req, res) => {
-  DB.query('SELECT projets.*, GROUP_CONCAT(images.lien) AS images, GROUP_CONCAT(technos.nom) AS technos FROM projets LEFT JOIN images ON projets.id = images.id_projet LEFT JOIN technos ON projets.id = technos.id_projet', (err, results) => {
-    res.json(results)
-  })
+router.get('/', async (req, res) => {
+  const projects = await DB.execute('SELECT * FROM projets');
+
+  if (projects) {
+    let final = await Promise.all(projects[0].map(async (pro) => {
+      const images = await DB.execute(`SELECT id, lien FROM images WHERE id_projet = ${pro.id}`)
+      if (images) pro['images'] = images[0];
+
+      const technos = await DB.execute(`SELECT id, nom FROM technos WHERE id_projet = ${pro.id}`)
+      if (technos) pro['technos'] = technos[0];
+
+      return pro;
+    }))
+
+    res.status(200).json(final);
+    }
+    return res.status(400)
 })
 
 const port = 3030

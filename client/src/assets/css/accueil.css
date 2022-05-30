@@ -1,15 +1,28 @@
 .accueil_container{
-  height: 100%;
-  color : var(--font-color1);
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 1em;
+  color : var(--font-color1);
+  background-image: url('../../assets/img/fond.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
   text-align: center;
+  border-bottom-right-radius: 400px 200px;
+  border-bottom-left-radius: 400px 200px;
+  border-bottom: 3px solid var(--font-color2);
 }
 
-.accueil_container h1{
+.accueil_container .accueil_intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.accueil_intro h1{
   font-weight: 500;
   font-size: calc(var(--font-size) * 3.4);
   color: white;
@@ -17,18 +30,19 @@
 
 }
 
-.accueil_container h2{
-  font-weight: 400;
+.accueil_intro h2{
+  font-weight: 300;
   color: white;
-  font-style: italic;
-  font-size: calc(var(--font-size) * 2.4);
-  margin: 0.6em;
+  font-size: calc(var(--font-size) * 2.2);
+  padding: 0.5em 0.7em;
+  background-color: rgb(230, 225, 225);
+  border-radius: 4px;
 }
 
 
-.accueil_container .moi{
+.accueil_intro .moi{
   width: 210px;
-  height: 200px;
+  height: 205px;
   border-radius: 150px;
   border: 3px solid var(--font-color2);
   margin-bottom: 0.8em;
@@ -45,47 +59,39 @@
 }
 
 
-@media screen and (min-width: 760px){ 
+@media screen and (min-width: 800px){ 
   .accueil_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    height: 90vh;
-  }
-
-
-  .accueil_container .moi{
-    width: 410px;
-    height: 400px;
-    border-radius: 200px;
-    margin-top: 0.4em;
-  }
-
-  .accueil_container .accueil_intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url('../../assets/img/fond.jpg');
     background-size: cover;
     background-repeat:no-repeat;
-    background: linear-gradient(var(--primary-color), var(--third-color));
-    width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
+    margin: 0;
+    height: 88vh;
+    border-bottom-right-radius: 600px 300px;
+  border-bottom-left-radius: 600px 300px;
+  }
+
+  .accueil_container .accueil_intro{
+    padding-top: 1em;
+    padding-bottom: 1em;
     height: 80vh;
   }
 
-  .accueil_container .accueil_intro h1{
+  .accueil_intro .moi{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    margin-top: 2em;
+  }
+
+  .accueil_intro h1{
     font-size: calc(var(--font-size) * 5);
     margin: 0.4em;
   
   }
 
-  .accueil_container .accueil_intro h2{
+  .accueil_intro h2{
     font-size: calc(var(--font-size) * 3.3);
+    padding: 0.4em 0.8em;
   }
 
   .accueil_container .actionbutton_container{
