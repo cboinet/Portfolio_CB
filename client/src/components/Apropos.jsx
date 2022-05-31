@@ -2,16 +2,21 @@ import React from "react";
 import "../assets/css/apropos.css";
 import Skill from "./Skill";
 import ActionButton from "./ActionButton";
+import moi2 from "../assets/img/moi2.jpg";
 
 
 export default function Apropos() {
   return (
     <section className="apropos_container">
       <div className="apropos_present">
-        <h1>Qui suis-je ?</h1>
-        <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé de me reconvertir pour devenir Développeur Web.</p>
-        <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'un stage de 4 à 6 mois <output></output> d'une alternance de 12 mois</p>
-        <p>💡 J'ai à coeur d'apprendre et de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
+        <img src={moi2} className="moi2" alt="moi" />
+        
+        <div className="apropos_text">
+          <h1>Qui suis-je ?</h1>
+          <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé de me reconvertir pour devenir Développeur Web.</p>
+          <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'un stage de 4 à 6 mois <output></output> d'une alternance de 12 mois</p>
+          <p>💡 J'ai à coeur d'apprendre, de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
+        </div>
       </div>
 
       <div className="skills_hard">

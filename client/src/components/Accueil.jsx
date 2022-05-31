@@ -13,11 +13,12 @@ export default function Accueil() {
         <img src={moi2} className="moi" alt="moi" />
         <h1>Christophe BOINET</h1>
         <h2>Développeur Web</h2>
+        <div className="actionbutton_container">
+          <ActionButton role="Consulter mon CV" className="action" />
+          <ActionButton role="Me contacter" className="action" />
+        </div>
       </div>
-      <div className="actionbutton_container">
-        <ActionButton role="Consulter mon CV" className="action" />
-        <ActionButton role="Me contacter" className="action" />
-      </div>
+      
     </section>
   );
 };
