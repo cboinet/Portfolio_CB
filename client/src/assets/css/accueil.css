@@ -9,8 +9,8 @@
   background-size: cover;
   background-repeat:no-repeat;
   text-align: center;
-  border-bottom-right-radius: 400px 200px;
-  border-bottom-left-radius: 400px 200px;
+  border-bottom-right-radius: 600px 200px;
+  border-bottom-left-radius: 600px 200px;
   border-bottom: 3px solid var(--font-color2);
 }
 
@@ -52,7 +52,7 @@
 .accueil_container .actionbutton_container{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin: 2em;
@@ -66,8 +66,8 @@
     background-repeat:no-repeat;
     margin: 0;
     height: 88vh;
-    border-bottom-right-radius: 600px 300px;
-  border-bottom-left-radius: 600px 300px;
+    border-bottom-right-radius: 500px 300px;
+    border-bottom-left-radius: 500px 300px;
   }
 
   .accueil_container .accueil_intro{

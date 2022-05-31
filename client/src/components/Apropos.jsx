@@ -10,7 +10,7 @@ export default function Apropos() {
       <div className="apropos_present">
         <h1>Qui suis-je ?</h1>
         <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé de me reconvertir pour devenir Développeur Web.</p>
-        <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'une alternance de 12 mois</p>
+        <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'un stage de 4 à 6 mois <output></output> d'une alternance de 12 mois</p>
         <p>💡 J'ai à coeur d'apprendre et de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
       </div>
 
@@ -30,10 +30,10 @@ export default function Apropos() {
       <div className="skills_soft">
         <h1>Mes qualités et expériences</h1>
         <div className="softskills">
-          <p>Orientation client</p>
+          <p>Esprit client</p>
           <p>Adaptation</p>
           <p>Gestion de projets</p>
-          <p>Engagement dans les projets</p>
+          <p>Engagement</p>
         </div>
       </div>
 
