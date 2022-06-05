@@ -29,6 +29,7 @@
 
 .apropos_present .apropos_text p:last-child{
   font-weight: 700;
+  padding-top: 1em;
 }
 
 .apropos_container .skills_hard, .apropos_container .skills_soft{
@@ -48,7 +49,6 @@
   align-items: center;
   gap: 1em;
 }
-
 
 .apropos_container .apropos_present h1, .apropos_container .skills_hard h1, .apropos_container .skills_soft h1{
   color: var(--background-color);
@@ -86,8 +86,8 @@
 @media screen and (min-width: 800px){
   .apropos_container{
     min-height: 50vh;
-    border-bottom-right-radius: 60%;
-    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
     border-bottom: 3px solid var(--font-color2);
   }
 
@@ -102,7 +102,7 @@
     display: block;
     width: 650px;
     height: 610px;
-    margin-top: 1em;
+    margin-top: 0.2em;
     border-bottom-right-radius: 10px;
   }
 
@@ -124,7 +124,7 @@
   }
 
   .apropos_container .skills_soft h1{
-    margin-top: 2em;
+    margin-top: 1em;
   }
 
   .apropos_container .apropos_present p{

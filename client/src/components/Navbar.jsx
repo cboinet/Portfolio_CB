@@ -11,7 +11,7 @@ export default function Navbar () {
       <div className="nav">
         <NavLink exact activeClassName="active" to="/" className="nav_item">Accueil</NavLink>
         <NavLink exact activeClassName="active" to="/a-propos" className="nav_item">Qui suis-je</NavLink>
-        <NavLink exact activeClassName="active" to="/projet" className="nav_item">Projets</NavLink>
+        <NavLink exact activeClassName="active" to="/portfolio" className="nav_item">Portfolio</NavLink>
         <NavLink exact activeClassName="active" to ="/contact" className="nav_item">Contact</NavLink>
       </div>
     </header>

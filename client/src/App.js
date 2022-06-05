@@ -6,6 +6,7 @@ import Apropos from './components/Apropos';
 import Projet from './components/Projet';
 import Contact from './components/Contact';
 import { Routes, Route } from "react-router-dom";
+import Portfolio from './components/Portfolio';
 
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/a-propos" element={<Apropos />} />
-        <Route path="/projet" element={<Projet />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
