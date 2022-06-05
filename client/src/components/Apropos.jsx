@@ -10,11 +10,10 @@ export default function Apropos() {
     <section className="apropos_container">
       <div className="apropos_present">
         <img src={moi2} className="moi2" alt="moi" />
-        
         <div className="apropos_text">
           <h1>Qui suis-je ?</h1>
           <p>Après plus de 20 ans dans le management de la Qualité et une expérience comme thérapeute, j'ai décidé de me reconvertir pour devenir Développeur Web.</p>
-          <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'un stage de 4 à 6 mois <output></output> d'une alternance de 12 mois</p>
+          <p>Je suis acuellement en formation intensive à la Wild Code School et à la recherche d'un stage de 4 à 6 mois</p>
           <p>💡 J'ai à coeur d'apprendre, de comprendre et suis conscient des nombreux défis qui m'attendent. 💡</p>
         </div>
       </div>
@@ -44,7 +43,7 @@ export default function Apropos() {
 
       <div className="actionbutton_container">
         <ActionButton role="Consulter mon CV" className="action" />
-        <ActionButton role="Me contacter" className="action" />
+        <ActionButton role="Voir mes projets" className="action" />
       </div>
     </section>
 
