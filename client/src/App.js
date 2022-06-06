@@ -3,7 +3,6 @@ import './assets/index.css';
 import Navbar from './components/Navbar';
 import Accueil from './components/Accueil';
 import Apropos from './components/Apropos';
-import Projet from './components/Projet';
 import Contact from './components/Contact';
 import { Routes, Route } from "react-router-dom";
 import Portfolio from './components/Portfolio';

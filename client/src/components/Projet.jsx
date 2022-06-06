@@ -1,20 +1,20 @@
 import React from "react";
 import "../assets/css/projet.css"
 
-export default function Projet({ description, image, techno, gh }) {
+export default function Projet({ description, illustration, techno, gh }) {
   return (
-    <section className="projets">
-      <div className="projets_container">
+    <section className="projet_container">
+      <div className="projet_border">
         <div className="projet_description">
-          <h2>Description</h2>
+          <h2>Description : </h2>
           <p>{description}</p>
         </div>
         <div className="projet_images">
-          <h2>Illustrations</h2>
-          <p>{image}</p>
+          <h2>Illustrations : </h2>
+          <p>{illustration}</p>
         </div>
         <div className="projet_technos">
-          <h2>Langages et technologies utilisés</h2>
+          <h2>Langages et technologies utilisés : </h2>
           <p>{techno}</p>
         </div>
         <div className="projet_gh">
