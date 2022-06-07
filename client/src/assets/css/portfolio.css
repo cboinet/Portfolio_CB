@@ -22,8 +22,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 2em;
+    width: 100%;
+   
   }
-
 
   .portfolio_container h1{
     font-size: calc(var(--font-size) * 4.5);

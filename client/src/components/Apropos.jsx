@@ -4,6 +4,7 @@ import Skill from "./Skill";
 import ActionButton from "./ActionButton";
 import moi2 from "../assets/img/moi2.jpg";
 import mysql from "../assets/img/mysql.png";
+import notion from "../assets/img/notion.png";
 
 
 export default function Apropos() {
@@ -32,6 +33,7 @@ export default function Apropos() {
           <Skill name="MySQL" image={mysql} />
           <Skill name="Visual Studio Code" image="fa-solid fa-code" />
           <Skill name="GitHub" image="fa-brands fa-github" />
+          <Skill name="Notion" image={notion} />
         </div>
       </div>
 
