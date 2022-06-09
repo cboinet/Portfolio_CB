@@ -5,20 +5,8 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Contact () {
   return (  
-    // <div className="contact_container">
-    //   <div className="contact_form">
-    //     <p>Contactez-moi</p>
-
-    //   </div>
-    //   <div className="contact_reseaux">
-    //     <p>Mes réseaux</p>
-
-    //   </div>
-    // </div>
-
-    <section id="contact">
+    <section className="contact_container">
       <h2>Prenez contact avec moi!</h2>
-
       <form >
         <input type="text" name="name" placeholder="Nom et prénom" required />
         <input type="email" name="email" placeholder="adresse mail" required />
@@ -29,12 +17,12 @@ export default function Contact () {
           placeholder="Votre message"
           required
         />
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn_contact">
           Envoyer
         </button>
       </form>
 
-      <div id="footer">
+      <div className="footer">
         <p>©Copyright 2022 / Christophe Boinet - Développeur Web </p>
         <div className="socials">
           <a

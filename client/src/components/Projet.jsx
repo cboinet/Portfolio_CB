@@ -12,8 +12,6 @@ export default function Projet({ titre, description, illustration, techno, gh })
           <div className="projet_images">
             <img src={illustration} alt="site_picture" className="screenshot"/>
             <img src={illustration} alt="site_picture" className="screenshot" />
-            <img src={illustration} alt="site_picture" className="screenshot" />
-            <img src={illustration} alt="site_picture" className="screenshot"/>
           </div>
         </div>
 

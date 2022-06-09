@@ -50,7 +50,7 @@ export default function Apropos() {
 
       <div className="actionbutton_container">
         <ActionButton role="Consulter mon CV" />
-        <ActionButton role="Me contacter" />
+        <ActionButton role="Voir mes projets" />
       </div>
     </section>
 

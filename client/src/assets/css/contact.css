@@ -1,12 +1,16 @@
-section {
-  position: relative;
+.contact_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 form {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   gap: 2rem;
 
@@ -27,11 +31,25 @@ textarea {
 }
 
 button {
+  border: var(--third-color);
+  color: var(--background-color);
+  background-color: var(--third-color);
+  font-family: var(--font-family);
+  font-size: calc(var(--font-size) * 1.4);
+  padding: 0.8em;
+  border-radius: 5px;
   align-self: center;
 }
 
-#footer {
-  position: absolute;
+button:hover{
+  color: var(--font-color2);
+  cursor: pointer;
+  transition: color 0.40s;
+  border: 1px solid var(--font-color2);
+}
+
+.footer {
+
   bottom: 0;
   width: 100%;
   height: 4rem;
@@ -40,12 +58,12 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-#footer p {
+.footer p {
   font-size: 0.8rem;
 }
 
 .socials > a {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 .socials a:hover {
@@ -54,7 +72,7 @@ button {
 }
 
 @media screen and (min-width: 800px) {
-  #contact h2 {
+  form h2 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -65,7 +83,7 @@ button {
 }
 
 @media screen and (max-width: 800px) {
-  #footer {
+  .footer {
     flex-direction: column-reverse;
     height: 6rem;
     text-align: center;
